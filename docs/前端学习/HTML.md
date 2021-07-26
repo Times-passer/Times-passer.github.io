@@ -1,18 +1,19 @@
-
-## 标题标签\<h1>~\<h6>
+### 标题标签\<h1>~\<h6>
 
 - 块级元素
 
 - 一般一个HTML里面只有一个\<h1>，即使样式改变，他的权重不变
 - 没有h7及以后的标签，若写了h7，字体样式会变成普通文本
 
-## 段落标签\<p>
+
+
+### 段落标签\<p>
 
 + 输入多个空格时只渲染一个空格，想渲染多个空格的话，用多个`&nbsp;`
 
 + p标签具有默认的样式——上下有一定的margin外边距：![image-20210711162113954](https://i.loli.net/2021/07/13/dGsPZcN8qFLSwVh.png)
 
-  <img src="E:\Warehouse\conscious\【前端学习】\华为云大前端\第1阶段 前端基础篇\1 HTML\image-20210711162134749.png" alt="image-20210711162134749" style="zoom: 67%;" />
+  ![image-20210711162134749](https://i.loli.net/2021/07/26/xsF5O4vN21Etylb.png)
 
   
 
@@ -22,16 +23,16 @@
 
 
 
-## 结构标签\<div>\<span>
+### 结构标签\<div>\<span>
 
-### \<div>(division)
+#### \<div>(division)
 
 * **是块级元素**
 * 没有特殊含义，所以常用来划分区域，是最通用的页面容器
 
 
 
-### \<span>
+#### \<span>
 
 - **是内联元素**
 - 也是没有什么特定格式，常用来修饰部分文字的样式
@@ -40,7 +41,7 @@
 
 
 
-## 链接标签\<a>
+### 链接标签\<a>
 
 - **是内联元素**
 
@@ -57,7 +58,7 @@
 
 
 
-## html相对路径的写法
+### html相对路径的写法
 
  > ./   代表文件所在的目录（可以省略不写）如果写成image/background就相当于是在html文件下找image文件夹，当然是找不到的  
  > ../    代表文件所在的父级目录    
@@ -66,7 +67,7 @@
 
 
 
-### HTML 中的 href 和 src 有什么区别
+#### HTML 中的 href 和 src 有什么区别
 
 href 是 Hypertext Reference 的缩写，表示超文本引用。用来建立当前元素和文档之间的链接。常用的有：link、a。例如：
 
@@ -80,7 +81,7 @@ href 是 Hypertext Reference 的缩写，表示超文本引用。用来建立当
 
 
 
-## 图片标签\<img>
+### 图片标签\<img>
 
 - 单标签
 - `src`属性表示图片的地址，`alt`属性表示当图片无法显示时的替代文本，`title`属性表示鼠标光标移动到图片上时的提示
@@ -89,7 +90,7 @@ href 是 Hypertext Reference 的缩写，表示超文本引用。用来建立当
 
 
 
-### 引入图片路径示例
+#### 引入图片路径示例
 
 1. *.html 文件跟 *.jpg 文件(f盘)在不同目录下：
 
@@ -117,7 +118,7 @@ href 是 Hypertext Reference 的缩写，表示超文本引用。用来建立当
 
 
 
-## 列表标签\<ul>\<ol>\<dl>
+### 列表标签\<ul>\<ol>\<dl>
 
 - \<ul>无序列表、\<ol>有序列表；\<li>定义列表项
 - \<dl>（definition list）自定义列表（\<dt>标题、\<dd>列表项）
@@ -128,7 +129,7 @@ href 是 Hypertext Reference 的缩写，表示超文本引用。用来建立当
 
 
 
-## 表格标签\<table>\<caption>\<tr>\<th>\<td>
+### 表格标签\<table>\<caption>\<tr>\<th>\<td>
 
 - \<table>包括整个表格
 - \<caption>表示表格标题
@@ -136,11 +137,11 @@ href 是 Hypertext Reference 的缩写，表示超文本引用。用来建立当
 - \<th>表示表头，和td一样都是写在tr里面的；**但th相比td，有自己独特的样式：居中  字体加粗** 
 - `align`属性规定单元格内容的水平对齐方式
 
-> <img src="E:\Warehouse\conscious\【前端学习】\华为云大前端\第1阶段 前端基础篇\1 HTML\image-20210712102642249.png" alt="image-20210712102642249" style="zoom:67%;" />
+> ![image-20210712102642249](https://i.loli.net/2021/07/26/C6KDjTM2SvOIp31.png)
 
 
 
-### thead、tbody、tfoot标签
+#### thead、tbody、tfoot标签
 
 **\<thead>\</thead>**			***\*表格页眉标签（包裹表头的<tr>）\****
 
@@ -150,7 +151,7 @@ href 是 Hypertext Reference 的缩写，表示超文本引用。用来建立当
 
 **内部也需要tr、th、td标签**
 
-> <img src="E:\Warehouse\conscious\【前端学习】\华为云大前端\第1阶段 前端基础篇\1 HTML\image-20210712103528249.png" alt="image-20210712103528249" style="zoom:67%;" />
+> ![image-20210712103528249](https://i.loli.net/2021/07/26/jEvmlgRwKdBzhrL.png)
 
 
 
@@ -162,23 +163,25 @@ href 是 Hypertext Reference 的缩写，表示超文本引用。用来建立当
 
 - 使用这3个标签，会先加载页眉页尾，再加载主体（在数据量大的时候，如果不用这3个标签，等全部加载完再渲染出来会显得特别慢）【加载顺序始终是thead->tfoot->tbody】
 
->  <img src="E:\Warehouse\conscious\【前端学习】\华为云大前端\第1阶段 前端基础篇\1 HTML\image-20210712151804020.png" alt="image-20210712151804020" style="zoom:67%;" />
+>  ![image-20210713162235166](https://i.loli.net/2021/07/26/k3RTNlcI8WJ2YpC.png)
+>
+>  
 
 
 
-### \<col>\<colgroup> 标签：规定某一列的全部样式
+#### \<col>\<colgroup> 标签：规定某一列的全部样式
 
 - \<col> 标签为表格中一个或多个列定义属性值。
 - 如需对全部列应用样式，\<col> 标签很有用，这样就不需要对各个单元和各行重复应用样式了。
 - 您只能在\<table>  或 \< colgroup> 元素中使用 \<col> 标签。
 
-> ![image-20210713162120133](E:\Warehouse\conscious\【前端学习】\华为云大前端\第1阶段 前端基础篇\1 HTML\image-20210713162120133.png)
+> ![image-20210713162120133](https://i.loli.net/2021/07/26/qrxjoz8LXtZblYN.png)
 >
-> ![image-20210713162235166](E:\Warehouse\conscious\【前端学习】\华为云大前端\第1阶段 前端基础篇\1 HTML\image-20210713162235166.png)
+> ![image-20210712151804020](https://i.loli.net/2021/07/26/kHA7sMgmZLVvUcr.png)
 
 
 
-### 表格的常用属性
+#### 表格的常用属性
 
 - `border`设定边框，属性值的数字代表边框宽度
 - `border-collapse: collapse;`使表格边框变成实心
@@ -188,7 +191,7 @@ href 是 Hypertext Reference 的缩写，表示超文本引用。用来建立当
 
 
 
-### \<colspan>\< rowspan> 标签：合并单元格
+#### \<colspan>\< rowspan> 标签：合并单元格
 
 \<td>有两个常用属性，**`colspan`用于相邻列（横向）合并、`rowspan`用于相邻行（纵向）合并**
 
@@ -202,22 +205,22 @@ href 是 Hypertext Reference 的缩写，表示超文本引用。用来建立当
 
 
 
-## 表单标签\<form>[数据交互功能]
+### 表单标签\<form>[数据交互功能]
 
 - `action`属性定义表单提交的**地址（可以是网页，可以是后端地址）**
 
-- `method`属性定义**提交的方式**，表单提交有2种方式：**get是用来从服务器上获得数据，而post是用来向服务器上传递数据**
+- `method`属性定义**提交的方式**，表单提交有2种方式：**get是用来从服务器上获得数据，而post是向服务器上传数据**
 - 其他表单控件元素必须放在form标签的内部，最好每**部分都用\<div>分块**
 
 > 实例：
 >
-> ![image-20210713170709672](E:\Warehouse\conscious\【前端学习】\华为云大前端\第1阶段 前端基础篇\1 HTML\image-20210713170709672.png)
+> ![image-20210713170709672](https://i.loli.net/2021/07/26/Tq6x9yAHaXp5Ige.png)
 >
-> ![image-20210713170728302](E:\Warehouse\conscious\【前端学习】\华为云大前端\第1阶段 前端基础篇\1 HTML\image-20210713170728302.png)
+> ![image-20210713170728302](https://i.loli.net/2021/07/26/Gte17Ml2ZiXmbfs.png)
 
 
 
-### \<input>输入框/按钮
+#### \<input>输入框/按钮
 
 - **单标签**元素
 - 其type属性代表了input的表单类型，通过type属性的不同取值，来定义不同的表单控件
@@ -240,7 +243,7 @@ href 是 Hypertext Reference 的缩写，表示超文本引用。用来建立当
 
 
 
-### \<select>\<option>下拉列表
+#### \<select>\<option>下拉列表
 
 - \<select>用来定义列表；\<option>用来定义列表项
 - \<option>里可添加`selected`属性，规定该选项默认选中
@@ -248,15 +251,13 @@ href 是 Hypertext Reference 的缩写，表示超文本引用。用来建立当
 
 - \<select>里可添加`multiple`属性，使得下拉列表可以按住shift多选
 
-> ![image-20210713204856555](E:\Warehouse\conscious\【前端学习】\华为云大前端\第1阶段 前端基础篇\1 HTML\image-20210713204856555.png)
+> ![image-20210713204856555](https://i.loli.net/2021/07/26/US6jKafkXOwYVDG.png)
 
 
 
-### \<textarea>输入多行文本域
+#### \<textarea>输入多行文本域
 
 - `cols`属性设定列数，`rows`属性设定行数
 
-> ![image-20210713204820560](E:\Warehouse\conscious\【前端学习】\华为云大前端\第1阶段 前端基础篇\1 HTML\image-20210713204820560.png)
-
-
+> ![image-20210713204820560](https://i.loli.net/2021/07/26/DIyZTduWvmnBKEk.png)
 

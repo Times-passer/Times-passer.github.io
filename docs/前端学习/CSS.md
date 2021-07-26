@@ -6,10 +6,29 @@
 
 ### CSS的4种引入方法
 
-1. 内联样式（**权重最高）**：将CSS样式直接写到HTML元素的style属性中![image-20210714101250018](E:\Warehouse\conscious\【前端学习】\华为云大前端\第1阶段 前端基础篇\2 CSS\image-20210714101250018.png)
-2. 内部样式：将CSS样式写到\<style>标签中（\<style>放在\<head>里面）![image-20210714100715027](E:\Warehouse\conscious\【前端学习】\华为云大前端\第1阶段 前端基础篇\2 CSS\image-20210714100715027.png)
-3. **引入外部样式：通过\<link> （单标签）元素引入外部的一个CSS文件（企业常用）**![image-20210714101747544](E:\Warehouse\conscious\【前端学习】\华为云大前端\第1阶段 前端基础篇\2 CSS\image-20210714101747544.png)
-4. 导入外部样式：通过在\<style>元素中（\<style>放在\<head>里面），使用@import导入一个外部的CSS文件	![image-20210714101955652](E:\Warehouse\conscious\【前端学习】\华为云大前端\第1阶段 前端基础篇\2 CSS\image-20210714101955652.png)
+1. 内联样式（**权重最高）**：将CSS样式直接写到HTML元素的style属性中
+
+![image-20210714100715027](https://i.loli.net/2021/07/26/MRXv7wm9HAZepdx.png)
+
+
+
+2. 内部样式：将CSS样式写到\<style>标签中（\<style>放在\<head>里面）
+
+![image-20210714101955652](https://i.loli.net/2021/07/26/EkZLxI9idFGqgu5.png)
+
+
+
+3. **引入外部样式：通过\<link> （单标签）元素引入外部的一个CSS文件（企业常用）**
+
+![image-20210714101250018](https://i.loli.net/2021/07/26/rNiFn25YBlUDXbZ.png)
+
+
+
+4. 导入外部样式：通过在\<style>元素中（\<style>放在\<head>里面），使用@import导入一个外部的CSS文件	
+
+![image-20210714101747544](https://i.loli.net/2021/07/26/uDRwYT1aBJqhCtO.png)
+
+
 
 
 
@@ -25,11 +44,15 @@
 2. 分号分隔样式**（最后一个样式的结尾最好也加分号，方便以后添加）**
 3. 小写
 
+> 
+>
+> ![image-20210715192058065](https://i.loli.net/2021/07/26/lkLg4NIGP7fTbjX.png)
+>
+> 
+>
+> ![image-20210714195419145](https://i.loli.net/2021/07/26/Cqg8frKGlIeTFVQ.png)
 
 
-<img src="E:\Warehouse\conscious\【前端学习】\华为云大前端\第1阶段 前端基础篇\2 CSS\image-20210714103826043.png" alt="image-20210714103826043" style="zoom:67%;" />
-
-<img src="E:\Warehouse\conscious\【前端学习】\华为云大前端\第1阶段 前端基础篇\2 CSS\image-20210714104214622.png" alt="image-20210714104214622" style="zoom:50%;" />
 
 
 
@@ -83,9 +106,15 @@
 | [title`~=`flower] | 选择 title 属性**`包含`**单词 "flower" 的所有元素。 |
 | [lang`|=`en]      | 选择 lang 属性值以 "en" **`开头`**的所有元素。      |
 
-* ~=的包含，**不是**指属性**值里面包含**，**是属性里面包含**这一整个完整的单词：![image-20210714161243978](E:\Warehouse\conscious\【前端学习】\华为云大前端\第1阶段 前端基础篇\2 CSS\image-20210714161243978.png)
+* ~=的包含，**不是**指属性**值里面包含**，**是属性里面包含**这一整个完整的单词：
 
-* |=xxx的开头，一定**要在xxx后面跟`-`小横杠**，或者**整个属性值就是xxx**，才能生效：![image-20210714161722720](E:\Warehouse\conscious\【前端学习】\华为云大前端\第1阶段 前端基础篇\2 CSS\image-20210714161722720.png)
+![image-20210714104214622](https://i.loli.net/2021/07/26/M8iJ3yhQSbYf9za.png)
+
+
+
+* |=xxx的开头，一定**要在xxx后面跟`-`小横杠**，或者**整个属性值就是xxx**，才能生效：
+
+![image-20210714103826043](https://i.loli.net/2021/07/26/X9uwTeh5INd4vRU.png)
 
 
 
@@ -201,13 +230,18 @@
 ### 选择器权重
 
 * 通配符选择器  \*：0
+
 * 标签、伪元素选择器：1
+
 * 类 class、属性[ ]、伪类 :  选择器：10
+
 * id选择器：100
+
 * 内联样式（第一种引入方法）：1000
+
 * !important：正无穷   【**使用方法是放在样式值的后面（带个空格）**】
 
-<img src="E:\Warehouse\conscious\【前端学习】\华为云大前端\第1阶段 前端基础篇\2 CSS\image-20210714195419145.png" alt="image-20210714195419145" style="zoom: 80%;" />
+  如图：![image-20210714161243978](https://i.loli.net/2021/07/26/EmGcDR5fnMTXekU.png)
 
 
 
@@ -425,7 +459,9 @@ bolder：特粗
 
 > .box { padding: 50px; border: 1px solid #000000; margin: 50px; }  
 >
-> ![image-20210715192058065](E:\Warehouse\conscious\【前端学习】\华为云大前端\第1阶段 前端基础篇\2 CSS\image-20210715192058065.png)
+> ![image-20210714161722720](https://i.loli.net/2021/07/26/oQkJthEsa9Dr1Nd.png)
+>
+> 
 
 
 
@@ -844,3 +880,8 @@ display属性用于控制元素如何显示
 <div class=“child”>我是子元素，我使用绝对定位</div>
 </div>
 ~~~
+
+
+
+
+
