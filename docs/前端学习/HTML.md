@@ -251,7 +251,7 @@ href 是 Hypertext Reference 的缩写，表示超文本引用。用来建立当
 
 - \<select>里可添加`multiple`属性，使得下拉列表可以按住shift多选
 
-> ![image-20210713204856555](https://i.loli.net/2021/07/26/US6jKafkXOwYVDG.png)
+> ![image-20210713204820560](https://i.loli.net/2021/07/26/DIyZTduWvmnBKEk.png)
 
 
 
@@ -259,5 +259,5 @@ href 是 Hypertext Reference 的缩写，表示超文本引用。用来建立当
 
 - `cols`属性设定列数，`rows`属性设定行数
 
-> ![image-20210713204820560](https://i.loli.net/2021/07/26/DIyZTduWvmnBKEk.png)
+> ![image-20210713204856555](https://i.loli.net/2021/07/26/US6jKafkXOwYVDG.png)
 
